@@ -2,6 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/view/homescreen/widgets/albumcard.dart';
+import 'package:spotify_clone/view/playlist_screen/english_album.dart';
+import 'package:spotify_clone/view/playlist_screen/malayam_album.dart';
+import 'package:spotify_clone/view/playlist_screen/melody_album.dart';
+import 'package:spotify_clone/view/playlist_screen/pop_album.dart';
 
 class Playlist extends StatelessWidget {
   const Playlist({super.key});
@@ -63,17 +67,24 @@ class Playlist extends StatelessWidget {
             SizedBox(
               width: 6,
             ),
-            Container(
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 107, 105, 105),
-                  borderRadius: BorderRadius.circular(10)),
-              height: 60,
-              width: 180,
-              child: Row(
-                children: [
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => EnglishAlbum(),
+                  ),
+                );
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 107, 105, 105),
+                    borderRadius: BorderRadius.circular(10)),
+                height: 60,
+                width: 180,
+                child: Row(
+                  children: [
+                    Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                       ),
@@ -81,24 +92,31 @@ class Playlist extends StatelessWidget {
                         'https://i.pinimg.com/564x/84/d7/50/84d75044e18aacba5199b9f480a353d1.jpg',
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    "English Albums",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  )
-                ],
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      "English Albums",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
               ),
             ), //1st Playlist
             SizedBox(width: 3),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MalayamAlbum(),
+                  ),
+                );
+              },
               child: Container(
                 decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 107, 105, 105),
@@ -144,17 +162,24 @@ class Playlist extends StatelessWidget {
             SizedBox(
               width: 6,
             ),
-            Container(
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 107, 105, 105),
-                  borderRadius: BorderRadius.circular(10)),
-              height: 60,
-              width: 180,
-              child: Row(
-                children: [
-                  InkWell(
-                    onTap: () {},
-                    child: Container(
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MelodyAlbum(),
+                  ),
+                );
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 107, 105, 105),
+                    borderRadius: BorderRadius.circular(10)),
+                height: 60,
+                width: 180,
+                child: Row(
+                  children: [
+                    Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                       ),
@@ -162,131 +187,66 @@ class Playlist extends StatelessWidget {
                         'https://i.pinimg.com/474x/28/9a/af/289aafe18ab96a134dd85d7a7e0c5902.jpg',
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    "Melody",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  )
-                ],
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Text(
+                      "Melody",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
               ),
             ), //3nd playlist
+
             SizedBox(width: 3),
-            Container(
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 107, 105, 105),
-                  borderRadius: BorderRadius.circular(10)),
-              height: 60,
-              width: 180,
-              child: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => PopAlbum(),
+                  ),
+                );
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 107, 105, 105),
+                    borderRadius: BorderRadius.circular(10)),
+                height: 60,
+                width: 180,
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Image.network(
+                        'https://i.pinimg.com/474x/af/ed/4f/afed4f641806bc155539b51d5a78d7da.jpg',
+                      ),
                     ),
-                    child: Image.network(
-                      'https://i.pinimg.com/474x/af/ed/4f/afed4f641806bc155539b51d5a78d7da.jpg',
+                    SizedBox(
+                      width: 5,
                     ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    "PoP Songs",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ],
+                    Text(
+                      "PoP Songs",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
               ),
             ), //4nd playlist
             SizedBox(width: 3),
           ],
         ),
-        SizedBox(
-          height: 25,
-          width: 30,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(
-              width: 6,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 107, 105, 105),
-                  borderRadius: BorderRadius.circular(10)),
-              height: 60,
-              width: 180,
-              child: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Image.network(
-                      'https://i.pinimg.com/474x/8d/95/b6/8d95b6faf71e8f5c283cd16735ba5440.jpg',
-                    ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    "Sky Hits",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  )
-                ],
-              ),
-            ), //5nd playlist
-            SizedBox(width: 3),
-            Container(
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 107, 105, 105),
-                  borderRadius: BorderRadius.circular(10)),
-              height: 60,
-              width: 180,
-              child: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    child: Image.network(
-                      'https://i.pinimg.com/474x/e6/d0/28/e6d028628ab1c6c03e57dbfdee52ca01.jpg',
-                    ),
-                  ),
-                  SizedBox(
-                    width: 5,
-                  ),
-                  Text(
-                    "ANIMAL\n(Orignal track)",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-            ), //6nd playlist
-            SizedBox(width: 3),
-          ],
-        ),
-        //End of playlists
 
         AlbumCard() //
       ], //main Column

@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(0, 122, 116, 116),
+        backgroundColor: Color.fromARGB(0, 157, 147, 147),
         title: Text(
           'Good morning',
           style: TextStyle(
@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
         ],
       ),
       body: Playlist(),
-      backgroundColor: Color.fromARGB(25, 114, 107, 107),
+      backgroundColor: Color.fromARGB(46, 164, 159, 159),
     );
   }
 }
