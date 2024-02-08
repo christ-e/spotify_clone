@@ -1,7 +1,6 @@
 // ignore_for_file: camel_case_types, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, unused_local_variable, sort_child_properties_last
 
 import 'package:flutter/material.dart';
-import 'package:spotify_clone/utils/app_colors.dart';
 import 'package:spotify_clone/utils/db.dart';
 
 class AlbumCard extends StatelessWidget {
