@@ -28,7 +28,7 @@ class AlbumCard extends StatelessWidget {
           SizedBox(
             height: 600,
             child: SingleChildScrollView(
-              physics: NeverScrollableScrollPhysics(),
+              // physics: NeverScrollableScrollPhysics(),
               scrollDirection: Axis.horizontal,
               child: Row(children: [
                 ListView.builder(
