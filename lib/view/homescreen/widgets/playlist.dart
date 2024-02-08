@@ -288,7 +288,7 @@ class Playlist extends StatelessWidget {
         ),
         //End of playlists
 
-        albumCard() //
+        AlbumCard() //
       ], //main Column
     );
   }
