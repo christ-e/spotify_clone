@@ -29,7 +29,7 @@ class _MalayamAlbumState extends State<MalayamAlbum> {
               child: Container(
                 height: 200,
                 width: 200,
-                child: Image.asset(ImageContants.englishP),
+                child: Image.asset(ImageContants.malayalmP),
               ),
             ),
             SizedBox(
@@ -38,7 +38,7 @@ class _MalayamAlbumState extends State<MalayamAlbum> {
             Padding(
               padding: const EdgeInsets.all(10),
               child: Text(
-                "LoFi Songs ",
+                "Malayalam Songs ",
                 style: TextStyle(
                     color: ColorSpotify.white,
                     fontWeight: FontWeight.w600,
@@ -137,13 +137,15 @@ class _MalayamAlbumState extends State<MalayamAlbum> {
               child: ListView.builder(
                 shrinkWrap: true,
                 physics: ScrollPhysics(),
-                itemCount: DataBase.albumDetails.length,
+                itemCount: DataBase.malaymSongDelails.length,
                 itemBuilder: (context, index) => ListTile(
                   leading: Container(
                     width: 50,
                     height: 50,
-                    child:
-                        Image.network(DataBase.albumDetails[index]['image']!),
+                    child: Image.network(
+                      DataBase.malaymSongDelails[index]['image']!,
+                      fit: BoxFit.cover,
+                    ),
                     //color: Colors.amber,
                     //songDetails
                     // artist
@@ -151,14 +153,14 @@ class _MalayamAlbumState extends State<MalayamAlbum> {
                     // images
                   ),
                   title: Text(
-                    DataBase.albumDetails[index]['name']!,
+                    DataBase.malaymSongDelails[index]['songName']!,
                     style: TextStyle(
                       color: ColorSpotify.white,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
                   subtitle: Text(
-                    DataBase.albumDetails[index]['subname']!,
+                    DataBase.malaymSongDelails[index]['artist']!,
                     style: TextStyle(
                       color: ColorSpotify.white,
                       fontWeight: FontWeight.w400,
@@ -170,7 +172,7 @@ class _MalayamAlbumState extends State<MalayamAlbum> {
                   ),
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),

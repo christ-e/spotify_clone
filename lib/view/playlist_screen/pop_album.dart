@@ -29,7 +29,7 @@ class _PopAlbumState extends State<PopAlbum> {
               child: Container(
                 height: 200,
                 width: 200,
-                child: Image.asset(ImageContants.englishP),
+                child: Image.asset(ImageContants.popP),
               ),
             ),
             SizedBox(
@@ -128,7 +128,7 @@ class _PopAlbumState extends State<PopAlbum> {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: ColorSpotify.white,
-                    fontWeight: FontWeight.w400, //fontSize: 15
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
@@ -137,13 +137,13 @@ class _PopAlbumState extends State<PopAlbum> {
               child: ListView.builder(
                 shrinkWrap: true,
                 physics: ScrollPhysics(),
-                itemCount: DataBase.albumDetails.length,
+                itemCount: DataBase.popSongDelails.length,
                 itemBuilder: (context, index) => ListTile(
                   leading: Container(
                     width: 50,
                     height: 50,
                     child:
-                        Image.network(DataBase.albumDetails[index]['image']!),
+                        Image.network(DataBase.popSongDelails[index]['image']!),
                     //color: Colors.amber,
                     //songDetails
                     // artist
@@ -151,14 +151,14 @@ class _PopAlbumState extends State<PopAlbum> {
                     // images
                   ),
                   title: Text(
-                    DataBase.albumDetails[index]['name']!,
+                    DataBase.popSongDelails[index]['songName']!,
                     style: TextStyle(
                       color: ColorSpotify.white,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
                   subtitle: Text(
-                    DataBase.albumDetails[index]['subname']!,
+                    DataBase.popSongDelails[index]['artist']!,
                     style: TextStyle(
                       color: ColorSpotify.white,
                       fontWeight: FontWeight.w400,

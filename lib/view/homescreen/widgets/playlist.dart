@@ -1,6 +1,7 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:spotify_clone/utils/db.dart';
 import 'package:spotify_clone/view/homescreen/widgets/albumcard.dart';
 import 'package:spotify_clone/view/playlist_screen/english_album.dart';
 import 'package:spotify_clone/view/playlist_screen/malayam_album.dart';
@@ -13,6 +14,7 @@ class Playlist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
           height: 10,
@@ -126,18 +128,24 @@ class Playlist extends StatelessWidget {
                 child: Row(
                   children: [
                     Container(
+                      width: 50,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: Image.network(
-                        'https://i.pinimg.com/474x/2b/8b/7c/2b8b7ca6ba3f24b603ee2be0c2cddbbb.jpg',
+                      child: Container(
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: NetworkImage(
+                                  'https://i.pinimg.com/474x/2b/8b/7c/2b8b7ca6ba3f24b603ee2be0c2cddbbb.jpg'),
+                              fit: BoxFit.fill),
+                        ),
                       ),
                     ),
                     SizedBox(
                       width: 5,
                     ),
                     Text(
-                      "Malyam-Lofi",
+                      "Malaylam Album",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           fontSize: 15,
@@ -248,7 +256,33 @@ class Playlist extends StatelessWidget {
           ],
         ),
 
-        AlbumCard() //
+        SizedBox(height: 10),
+        CustomCard(
+          title: 'Your top mix',
+          songPoster: DataBase.imagePlay1,
+          songName: DataBase.songNamePlay1,
+          songArtist: DataBase.subnamePlay1,
+        ),
+        CustomCard(
+          title: 'Spotify Orginals',
+          songPoster: DataBase.imagePlay2,
+          songName: DataBase.songNamePlay2,
+          songArtist: DataBase.subnamePlay2,
+        ),
+        CustomCard(
+          title: 'Recommended for today',
+          songPoster: DataBase.imagePlay3,
+          songName: DataBase.songNamePlay3,
+          songArtist: DataBase.subnamePlay3,
+        ),
+        CustomCard(
+          title: 'Your top mix',
+          songPoster: DataBase.imagePlay4,
+          songName: DataBase.songNamePlay4,
+          songArtist: DataBase.subnamePlay4,
+        )
+
+        //albumCard Row
       ], //main Column
     );
   }

@@ -29,7 +29,7 @@ class _MelodyAlbumState extends State<MelodyAlbum> {
               child: Container(
                 height: 200,
                 width: 200,
-                child: Image.asset(ImageContants.englishP),
+                child: Image.asset(ImageContants.melodyP),
               ),
             ),
             SizedBox(
@@ -109,6 +109,7 @@ class _MelodyAlbumState extends State<MelodyAlbum> {
                 )
               ],
             ),
+            Divider(color: ColorSpotify.spoti_BgBlack),
             SizedBox(
               height: 30,
             ),
@@ -137,13 +138,13 @@ class _MelodyAlbumState extends State<MelodyAlbum> {
               child: ListView.builder(
                 shrinkWrap: true,
                 physics: ScrollPhysics(),
-                itemCount: DataBase.albumDetails.length,
+                itemCount: DataBase.meldySongDelails.length,
                 itemBuilder: (context, index) => ListTile(
                   leading: Container(
                     width: 50,
                     height: 50,
-                    child:
-                        Image.network(DataBase.albumDetails[index]['image']!),
+                    child: Image.network(
+                        DataBase.meldySongDelails[index]['image']!),
                     //color: Colors.amber,
                     //songDetails
                     // artist
@@ -151,14 +152,14 @@ class _MelodyAlbumState extends State<MelodyAlbum> {
                     // images
                   ),
                   title: Text(
-                    DataBase.albumDetails[index]['name']!,
+                    DataBase.meldySongDelails[index]['songName']!,
                     style: TextStyle(
                       color: ColorSpotify.white,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
                   subtitle: Text(
-                    DataBase.albumDetails[index]['subname']!,
+                    DataBase.meldySongDelails[index]['artist']!,
                     style: TextStyle(
                       color: ColorSpotify.white,
                       fontWeight: FontWeight.w400,

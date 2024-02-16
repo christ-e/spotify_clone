@@ -137,28 +137,26 @@ class _EnglishAlbumState extends State<EnglishAlbum> {
               child: ListView.builder(
                 shrinkWrap: true,
                 physics: ScrollPhysics(),
-                itemCount: DataBase.albumDetails.length,
+                itemCount: DataBase.englishSongDelails.length,
+                //itemCount: 5,
                 itemBuilder: (context, index) => ListTile(
                   leading: Container(
                     width: 50,
                     height: 50,
-                    child:
-                        Image.network(DataBase.albumDetails[index]['image']!),
-                    //color: Colors.amber,
-                    //songDetails
-                    // artist
-                    // songName
-                    // images
+                    child: Image.network(
+                      DataBase.englishSongDelails[index]['image']!,
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   title: Text(
-                    DataBase.albumDetails[index]['name']!,
+                    DataBase.englishSongDelails[index]['songName']!,
                     style: TextStyle(
                       color: ColorSpotify.white,
                       fontWeight: FontWeight.w400,
                     ),
                   ),
                   subtitle: Text(
-                    DataBase.albumDetails[index]['subname']!,
+                    DataBase.englishSongDelails[index]['artist']!,
                     style: TextStyle(
                       color: ColorSpotify.white,
                       fontWeight: FontWeight.w400,

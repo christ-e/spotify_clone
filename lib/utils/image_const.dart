@@ -6,6 +6,9 @@ class ImageContants {
   static String edSheeran =
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBE1MVrr4mX5wnAiVziSxDqJBQsVFQdIsz0w&usqp=CAU';
   static String englishP = 'assets/images/coverimage.jpg';
+  static String malayalmP = 'assets/images/coverimage_malayam.jpg';
+  static String popP = 'assets/images/coverimage_pop.jpg';
+  static String melodyP = 'assets/images/coverimage_melody.jpg';
 
   //Album images
   static const String tailor =
