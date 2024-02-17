@@ -164,8 +164,132 @@ class DataBase {
       'image': ImageContants.edSheeran
     }
   ];
-  static List<Map<String, String>> meldySongDelails = [];
-  static List<Map<String, String>> popSongDelails = [];
+
+  static List<Map<String, String>> meldySongDelails = [
+    {
+      "artist": "Arijit Singh",
+      "songName": "Tum Hi Ho",
+      "image":
+          "https://i.pinimg.com/236x/a6/e8/a8/a6e8a868738b03b601002fde03c5c701.jpg",
+    },
+    {
+      "artist": "Shreya Ghoshal",
+      "songName": "Teri Meri",
+      "image":
+          "https://i.pinimg.com/236x/5e/13/7d/5e137d4cceec6421334051197ca86336.jpg",
+    },
+    {
+      "artist": "Sonu Nigam",
+      "songName": "Kal Ho Naa Ho",
+      "image":
+          "https://i.pinimg.com/236x/46/0a/83/460a8316b5304bec69bad757003a42d4.jpg",
+    },
+    {
+      "artist": "Lata Mangeshkar",
+      "songName": "Lag Ja Gale",
+      "image":
+          "https://i.pinimg.com/236x/ed/cc/e3/edcce32cbef16e2f36bc13489a61ba08.jpg",
+    },
+    {
+      "artist": "Kishore Kumar",
+      "songName": "Pal Pal Dil Ke Paas",
+      "image":
+          "https://i.pinimg.com/236x/12/c9/3c/12c93c5c92870b79423a342f133af7e1.jpg",
+    },
+    {
+      "artist": "Asha Bhosle",
+      "songName": "Chura Liya Hai Tumne Jo Dil Ko",
+      "image":
+          "https://i.pinimg.com/236x/f4/81/63/f481639eeb63039311f0fe2ef1e396d0.jpg",
+    },
+    {
+      "artist": "Atif Aslam",
+      "songName": "Tera Hone Laga Hoon",
+      "image":
+          "https://i.pinimg.com/236x/60/50/a2/6050a2ceb12b75d371430a90ce109086.jpg",
+    },
+    {
+      "artist": "Alka Yagnik",
+      "songName": "Tujhe Dekha Toh",
+      "image":
+          "https://i.pinimg.com/236x/51/4b/cb/514bcb2fb07243f5151a3f2d2d78bff4.jpg",
+    },
+    {
+      "artist": "Kumar Sanu",
+      "songName": "Ek Ladki Ko Dekha Toh Aisa Laga",
+      "image":
+          "https://i.pinimg.com/236x/70/d0/37/70d037f1b6b1f686e52a5eabcf84d1d1.jpg",
+    },
+    {
+      "artist": "Shaan",
+      "songName": "Chand Sifarish",
+      "image":
+          "https://i.pinimg.com/236x/6d/14/c3/6d14c39d7438c5e01b0b7b42f8639b8e.jpg",
+    }
+  ];
+
+  static List<Map<String, String>> popSongDelails = [
+    {
+      "artist": "Michael Jackson",
+      "songName": "Billie Jean",
+      "image":
+          "https://i.pinimg.com/236x/1f/48/1b/1f481b7f6019de3f4170adc03f90f44e.jpg",
+    },
+    {
+      "artist": "Madonna",
+      "songName": "Like a Prayer",
+      "image":
+          "https://i.pinimg.com/236x/d2/79/38/d279386ced04e4f333e416f341ac43f4.jpg",
+    },
+    {
+      "artist": "Britney Spears",
+      "songName": "...Baby One More Time",
+      "image":
+          "https://i.pinimg.com/236x/ff/31/d6/ff31d66bc78ec864c8a2b1deae435e10.jpg",
+    },
+    {
+      "artist": "Justin Timberlake",
+      "songName": "Cry Me a River",
+      "image":
+          "https://i.pinimg.com/236x/19/f7/68/19f76854a898d32735a5cfdc2d2fc262.jpg",
+    },
+    {
+      "artist": "Taylor Swift",
+      "songName": "Shake It Off",
+      "image":
+          "https://i.pinimg.com/236x/f6/5d/fe/f65dfe400deb6211c96a72c93840f5b8.jpg",
+    },
+    {
+      "artist": "Beyoncé",
+      "songName": "Single Ladies (Put a Ring on It)",
+      "image":
+          "https://i.pinimg.com/236x/4e/ab/c5/4eabc51c88607581e83cfdd1a11d954c.jpg",
+    },
+    {
+      "artist": "Ed Sheeran",
+      "songName": "Shape of You",
+      "image":
+          "https://i.pinimg.com/236x/21/a8/f1/21a8f1c20ac4170adc459cf37483cb80.jpg",
+    },
+    {
+      "artist": "Lady Gaga",
+      "songName": "Bad Romance",
+      "image":
+          "https://i.pinimg.com/236x/6c/b7/f4/6cb7f4a8efc77c642e33c03d1473c1d7.jpg",
+    },
+    {
+      "artist": "Katy Perry",
+      "songName": "Roar",
+      "image":
+          "https://i.pinimg.com/236x/c6/32/1e/c6321e66b45e88adca7de259fdccfaf7.jpg",
+    },
+    {
+      "artist": "Rihanna",
+      "songName": "Umbrella",
+      "image":
+          "https://i.pinimg.com/236x/a2/56/02/a2560216dd135b451818124adfc1d9e7.jpg",
+    }
+  ];
   static List<Map<String, String>> malaymSongDelails = [
     {
       "artist": "Vineeth Sreenivasan",
@@ -347,6 +471,133 @@ class DataBase {
       "title": "Tamil",
       "Img":
           "https://i.pinimg.com/474x/46/60/a7/4660a7a6af7e2e689053674cf9357fd9.jpg",
-    }
+    },
+    {
+      "bgcolor":
+          "https://i.pinimg.com/236x/97/b0/d2/97b0d26d1b3a806d3b0701d1695fe7bc.jpg", //brown
+      "title": "Hip-Hop",
+      "Img":
+          "https://i.pinimg.com/236x/0b/f2/12/0bf21201ea3a14a236ac2c277eaa200b.jpg", //
+    },
+    {
+      "bgcolor":
+          "https://i.pinimg.com/236x/77/64/55/776455155c25536cba7ee5baff619f48.jpg", //lightblue
+      "title": "Gaming",
+      "Img":
+          "https://i.pinimg.com/236x/fa/a7/6b/faa76b9bc1aadc13081306bd308adb49.jpg", //
+    },
+    {
+      "bgcolor":
+          "https://i.pinimg.com/236x/e7/54/23/e754235bd774fcb75ad9f84fc9a4d99c.jpg", //dblue
+      "title": "Sleep",
+      "Img":
+          "https://i.pinimg.com/236x/23/94/2e/23942e512694383a2e4c2eec50df0fd0.jpg", //
+    },
+    {
+      "bgcolor":
+          "https://i.pinimg.com/236x/49/46/c5/4946c55d200277e2f8987e0bb9ba66c4.jpg", //cyan
+      "title": "Rock",
+      "Img":
+          "https://i.pinimg.com/236x/2a/db/f8/2adbf8a413f39ac410af09aaac63f3b1.jpg", //*
+    },
+  ];
+
+  static List<Map<String, String>> library = [
+    {
+      'title': 'Pop Songs',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/c3/24/d5/c324d50d560aab1fd19a6f97d0a25c3a.jpg',
+    },
+    {
+      'title': 'A. R. Rahman',
+      'subtitle': 'Artist',
+      'image':
+          'https://i.pinimg.com/236x/a6/2d/f5/a62df544e77f213decbd3ed5b6d110cd.jpg',
+    },
+    {
+      'title': 'Sky Hits',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/ff/31/d6/ff31d66bc78ec864c8a2b1deae435e10.jpg',
+    },
+    {
+      'title': 'K.J. Yesudas',
+      'subtitle': 'Playback Singer',
+      'image':
+          'https://i.pinimg.com/236x/66/4b/03/664b03f4047139cc1ab7573f8263a379.jpg',
+    },
+    {
+      'title': 'Popular',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/ea/37/cd/ea37cd92c70e5a92a8907c6df8e72c41.jpg',
+    },
+    {
+      'title': 'RnB Hits',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/3d/5e/f0/3d5ef04fd2cfedeb686fed39fdac97f1.jpg',
+    },
+    {
+      'title': 'K.S. Krishnakumar (K.K.)',
+      'subtitle': 'Playback Singer',
+      'image':
+          'https://i.pinimg.com/236x/ab/3d/48/ab3d489ba81d66e8e935cab0ed48a42a.jpg',
+    },
+    {
+      'title': 'Album',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/ec/09/43/ec0943933b6478dd8aaf1daa503d6241.jpg',
+    },
+    {
+      'title': 'Heavyweight',
+      'subtitle': 'Podcats',
+      'image':
+          'https://i.pinimg.com/236x/20/73/58/2073588c19e5fb4c08d4809906be8496.jpg',
+    },
+    {
+      'title': 'Yo Yo Honey Singh',
+      'subtitle': 'Artist',
+      'image':
+          'https://i.pinimg.com/236x/e4/ca/a5/e4caa5ce62c9b245a17a6a5caa34fc44.jpg',
+    },
+    {
+      'title': 'Mode',
+      'subtitle': 'Album',
+      'image':
+          'https://i.pinimg.com/236x/39/d1/3d/39d13df7c6c1958d3c7573e7cc9045b3.jpg',
+    },
+    {
+      'title': 'Oh yeah',
+      'subtitle': 'Album',
+      'image':
+          'https://i.pinimg.com/236x/d5/82/45/d582457dea5269a21e531cafca930e88.jpg',
+    },
+    {
+      'title': 'Bahubali',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/f3/82/d4/f382d4d31b0e410716988eba09f1d654.jpg',
+    },
+    {
+      'title': 'Music Mojo',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/b9/ea/f8/b9eaf8d7e9d8ba7cc87324d4858787e8.jpg',
+    },
+    {
+      'title': '9072E',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/61/fe/3f/61fe3f04236be81ca8faf9c60fb1d374.jpg',
+    },
+    {
+      'title': 'Football',
+      'subtitle': 'Playlist',
+      'image':
+          'https://i.pinimg.com/236x/fa/7d/90/fa7d90d0740d711b0a2e7a74cb968b8e.jpg',
+    },
   ];
 }
